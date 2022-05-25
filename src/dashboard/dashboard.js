@@ -6,7 +6,7 @@ import {
   Button,
 } from 'react-native'
 
-export const Dashboard = () => {
+export default function Dashboard() {
   return (
     <View style={styles.container}>
       <Text style={styles.textStyle}>Hello</Text>
