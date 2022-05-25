@@ -11,13 +11,19 @@ export default function Dashboard() {
     <View style={styles.container}>
       <View style={styles.gasContainer}>
         <View style={styles.gasContainerRow}>
-          <Text>Gas1</Text>
+          <Text style={{color: '#fff'}}>
+            Gas1
+          </Text>
         </View>
         <View style={styles.gasContainerRow}>
-          <Text>Gas2</Text>
+          <Text style={{color: '#fff'}}>
+            Gas2
+          </Text>
         </View>
         <View style={styles.gasContainerRow}>
-          <Text>Gas2</Text>
+          <Text style={{color: '#fff'}}>
+            Gas2
+          </Text>
         </View>
       </View>
     </View>
@@ -40,7 +46,6 @@ const styles = StyleSheet.create({
   gasContainer: {
     display: 'flex',
     flexDirection: 'row',
-    flex: 1,
     marginTop: '20px',
     padding: '10px',
     justifyContent: 'center',
