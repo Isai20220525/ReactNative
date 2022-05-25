@@ -17,7 +17,6 @@ export default class Signup extends Component {
       displayName: '',
       email: '',
       password: '',
-      isLoading: false,
     }
   }
   updateInputVal = (val, prop) => {
@@ -31,21 +30,12 @@ export default class Signup extends Component {
       this.state.password === ''
     ) {
       Alert.alert('Enter details to signup!')
+      this.props.navigation.navigate('Dashboard')
     } else {
       this.props.navigation.navigate('Dashboard')
     }
   }
   render() {
-    if (this.state.isLoading) {
-      return (
-        <View style={styles.preloader}>
-          <ActivityIndicator
-            size="large"
-            color="#9E9E9E"
-          />
-        </View>
-      )
-    }
     return (
       <View style={styles.container}>
         <TextInput
