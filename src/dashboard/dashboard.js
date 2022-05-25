@@ -45,7 +45,6 @@ const styles = StyleSheet.create({
   },
   gasContainer: {
     display: 'flex',
-    flex: 1,
     flexDirection: 'row',
     marginTop: '20px',
     justifyContent: 'space-around',
