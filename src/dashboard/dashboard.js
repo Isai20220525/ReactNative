@@ -41,10 +41,12 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     flex: 1,
-    alignItems: 'center',
+    marginTop: '20px',
+    padding: '10px',
     justifyContent: 'center',
   },
   gasContainerRow: {
+    padding: '5px',
     display: 'flex',
     backgroundColor: 'red',
     color: '#fff',
