@@ -9,7 +9,17 @@ import {
 export default function Dashboard() {
   return (
     <View style={styles.container}>
-      <Text style={styles.textStyle}>Hello</Text>
+      <View style={styles.gasContainer}>
+        <View style={styles.gasContainerRow}>
+          <Text>Gas1</Text>
+        </View>
+        <View style={styles.gasContainerRow}>
+          <Text>Gas2</Text>
+        </View>
+        <View style={styles.gasContainerRow}>
+          <Text>Gas2</Text>
+        </View>
+      </View>
     </View>
   )
 }
@@ -26,5 +36,20 @@ const styles = StyleSheet.create({
   textStyle: {
     fontSize: 15,
     marginBottom: 20,
+  },
+  gasContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  gasContainerRow: {
+    display: 'flex',
+    backgroundColor: 'red',
+    color: '#fff',
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 })
