@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     marginTop: '20px',
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
   },
   gasContainerRow: {
     padding: '20px',
